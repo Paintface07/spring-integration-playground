@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework.integration:spring-integration-jdbc:4.2.5.RELEASE">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-jdbc/4.2.5.RELEASE/spring-integration-jdbc-4.2.5.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-jdbc/4.2.5.RELEASE/spring-integration-jdbc-4.2.5.RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <LIBRARY_FILE />
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-jdbc/4.2.5.RELEASE/spring-integration-jdbc-4.2.5.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
