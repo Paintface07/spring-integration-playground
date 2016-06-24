@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import javax.sql.DataSource;
 
 /**
- * Created by Administrator on 6/23/2016.
+ * Created by kondrak on 6/23/2016.
  */
 @Component
 public class MyServiceActivator {

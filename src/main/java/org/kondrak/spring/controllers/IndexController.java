@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by Administrator on 6/22/2016.
+ * Created by kondrak on 6/22/2016.
  */
 
 @RestController

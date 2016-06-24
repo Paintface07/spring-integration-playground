@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
 /**
- * Created by Administrator on 6/22/2016.
+ * Created by kondrak on 6/22/2016.
  */
 @SpringBootApplication
 public class IntegrationApp {

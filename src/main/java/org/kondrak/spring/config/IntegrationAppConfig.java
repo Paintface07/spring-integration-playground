@@ -19,7 +19,7 @@ import org.springframework.messaging.MessagingException;
 import javax.sql.DataSource;
 
 /**
- * Created by Administrator on 6/22/2016.
+ * Created by kondrak on 6/22/2016.
  */
 @Configuration
 @EnableIntegration

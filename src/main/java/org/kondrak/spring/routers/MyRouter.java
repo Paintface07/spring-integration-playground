@@ -4,7 +4,7 @@ import org.springframework.integration.annotation.Router;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by Administrator on 6/23/2016.
+ * Created by kondrak on 6/23/2016.
  */
 @Component
 public class MyRouter {
