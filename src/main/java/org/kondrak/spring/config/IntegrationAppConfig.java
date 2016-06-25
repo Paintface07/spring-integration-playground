@@ -31,11 +31,6 @@ public class IntegrationAppConfig {
     @Autowired DataSource dataSource;
 
     @Bean
-    public JdbcTemplate getJdbcTemplate() {
-        return new JdbcTemplate(dataSource);
-    }
-
-    @Bean
     public DataSource dataSource() {
         EmbeddedDatabaseBuilder builder = new EmbeddedDatabaseBuilder();
         EmbeddedDatabase db = builder
@@ -60,6 +55,12 @@ public class IntegrationAppConfig {
     }
 
     @Bean
+    JdbcTemplate jdbcTemplate() {
+        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+        return jdbcTemplate;
+    }
+
+    @Bean
     public MessageChannel inputChannel() {
         DirectChannel inChan = new DirectChannel();
         return inChan;
@@ -75,5 +76,10 @@ public class IntegrationAppConfig {
     public MessageChannel endChannel() {
         DirectChannel outChan = new DirectChannel();
         return outChan;
+    }
+
+    @Bean
+    public MessageChannel jdbcChannel() {
+        return new DirectChannel();
     }
 }

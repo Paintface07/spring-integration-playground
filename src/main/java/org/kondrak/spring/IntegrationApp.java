@@ -21,6 +21,7 @@ public class IntegrationApp {
         MyGateway gateway = (MyGateway) ctx.getBean("myGateway");
         gateway.echo("Hello World!");
         gateway.echo("298473");
+        gateway.echo("say hello!");
         ctx.close();
     }
 

@@ -15,7 +15,11 @@ public class MyRouter {
         try {
             val = Integer.valueOf(rString);
         } catch (NumberFormatException ex) {
-            return "endChannel";
+            if(rString.contains("s")) {
+                return "jdbcChannel";
+            } else {
+                return "endChannel";
+            }
         }
         return "outputChannel";
     }
