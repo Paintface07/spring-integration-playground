@@ -11,11 +11,16 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabase;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
+import org.springframework.jms.annotation.EnableJms;
+import org.springframework.jms.config.JmsListenerContainerFactory;
+import org.springframework.jms.config.SimpleJmsListenerContainerFactory;
+import org.springframework.jms.core.JmsTemplate;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.MessageHandler;
 import org.springframework.messaging.MessagingException;
 
+import javax.jms.ConnectionFactory;
 import javax.sql.DataSource;
 
 /**
@@ -23,6 +28,7 @@ import javax.sql.DataSource;
  */
 @Configuration
 @EnableIntegration
+@EnableJms
 @IntegrationComponentScan("org.kondrak.spring")
 public class IntegrationAppConfig {
 
@@ -41,6 +47,20 @@ public class IntegrationAppConfig {
                 .addScript("db/create-db.sql")
                 .build();
         return db;
+    }
+
+    @Bean
+    JmsListenerContainerFactory<?> jmsContainerFactory(ConnectionFactory connectionFactory) {
+        SimpleJmsListenerContainerFactory factory = new SimpleJmsListenerContainerFactory();
+        factory.setConnectionFactory(connectionFactory);
+        return factory;
+    }
+
+    @Bean
+    JmsTemplate jmsTemplate(ConnectionFactory connectionFactory) {
+        JmsTemplate template = new JmsTemplate();
+        template.setConnectionFactory(connectionFactory);
+        return template;
     }
 
     @Bean

@@ -9,8 +9,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyRouter {
     @Router(inputChannel = "inputChannel", defaultOutputChannel = "outputChannel")
-    public void route(String rString) {
+    public String route(String rString) {
         System.out.println("ROUTING MESSAGE : " + rString);
-//        return "outputChannel";
+        Integer val = null;
+        try {
+            val = Integer.valueOf(rString);
+        } catch (NumberFormatException ex) {
+            return "endChannel";
+        }
+        return "outputChannel";
     }
 }
