@@ -1,11 +1,7 @@
 package org.kondrak.spring.receivers;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
-import org.springframework.util.FileSystemUtils;
 
 /**
  * Created by Administrator on 6/24/2016.

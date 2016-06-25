@@ -2,17 +2,13 @@ package org.kondrak.spring.serviceactivators;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.integration.annotation.ServiceActivator;
-import org.springframework.integration.jdbc.JdbcMessageHandler;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
-import org.springframework.messaging.MessageHandler;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.Session;
-import javax.sql.DataSource;
 
 /**
  * Created by kondrak on 6/23/2016.

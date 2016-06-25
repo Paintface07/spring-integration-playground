@@ -1,8 +1,6 @@
 package org.kondrak.spring.gateways;
 
-import org.springframework.integration.annotation.Gateway;
 import org.springframework.integration.annotation.MessagingGateway;
-import org.springframework.stereotype.Component;
 
 /**
  * Created by kondrak on 6/23/2016.
