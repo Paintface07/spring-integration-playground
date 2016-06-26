@@ -18,9 +18,9 @@ public class JdbcWriterService {
     @ServiceActivator(inputChannel = "jdbcChannel")
     public void activate(String payload) {
         System.out.println("IN JDBC SERVICE: " + payload);
-        jdbcTemplate.execute("INSERT INTO USER(ID, USER, EMAIL) VALUES (" +
-                "(SELECT MAX(ID) + 1 FROM USER), '" + payload + "', '" + payload + "@gmail.com')");
-        String s = jdbcTemplate.queryForObject("SELECT COUNT (*) FROM USER", String.class);
+        jdbcTemplate.execute("INSERT INTO USERS(ID, NAME, EMAIL) VALUES (" +
+                "COALESCE((SELECT MAX(ID) + 1 FROM USERS), 1), '" + payload + "', '" + payload + "@gmail.com')");
+        String s = jdbcTemplate.queryForObject("SELECT COUNT (*) FROM USERS", String.class);
         System.out.println("Count on DB: " + s);
     }
 }

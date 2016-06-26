@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9a6d277-7cd4-477b-a2b5-fe761a654249" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/kondrak/spring/receivers/JdbcWriterService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/kondrak/spring/IntegrationApp.java" afterPath="$PROJECT_DIR$/src/main/java/org/kondrak/spring/IntegrationApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/kondrak/spring/config/IntegrationAppConfig.java" afterPath="$PROJECT_DIR$/src/main/java/org/kondrak/spring/config/IntegrationAppConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/kondrak/spring/routers/MyRouter.java" afterPath="$PROJECT_DIR$/src/main/java/org/kondrak/spring/routers/MyRouter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/kondrak/spring/receivers/JdbcWriterService.java" afterPath="$PROJECT_DIR$/src/main/java/org/kondrak/spring/receivers/JdbcWriterService.java" />
     </list>
     <ignored path="spring-integration-playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,7 +38,7 @@
     <favorites_list name="spring-integration-playground" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.46268657">
+    <splitter split-orientation="vertical" split-proportion="0.5452522">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
@@ -77,8 +74,8 @@
           <file leaf-file-name="MyRouter.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/org/kondrak/spring/routers/MyRouter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+                <state relative-caret-position="528">
+                  <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -89,8 +86,8 @@
           <file leaf-file-name="IntegrationAppConfig.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/org/kondrak/spring/config/IntegrationAppConfig.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="541">
-                  <caret line="76" column="52" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
+                <state relative-caret-position="155">
+                  <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#2675#2676#0" expanded="true" />
@@ -155,19 +152,25 @@
           <file leaf-file-name="JdbcWriterService.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/org/kondrak/spring/receivers/JdbcWriterService.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+                <state relative-caret-position="338">
+                  <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <marker date="1466819792922" expanded="true" signature="653:746" placeholder="INSERT INTO USER... " />
-                    <marker date="1466819792922" expanded="true" signature="653:766" placeholder="INSERT INTO USER... " />
-                    <marker date="1466819792922" expanded="true" signature="653:767" placeholder="INSERT INTO USER... " />
-                    <marker date="1466819792922" expanded="true" signature="653:786" placeholder="INSERT INTO USER... " />
-                    <marker date="1466819792922" expanded="true" signature="653:795" placeholder="INSERT INTO USER... " />
-                    <marker date="1466819792922" expanded="true" signature="653:797" placeholder="INSERT INTO USER... " />
-                    <marker date="1466819792922" expanded="true" signature="717:745" placeholder="SELECT MAX(I... USER" />
-                    <marker date="1466819792922" expanded="true" signature="847:873" placeholder="SELECT COUNT... USER" />
+                    <marker date="1466965953061" expanded="true" signature="653:665" placeholder="INSERT INTO APP_USER... " />
+                    <marker date="1466965953061" expanded="true" signature="653:810" placeholder="INSERT INTO USERS... " />
+                    <marker date="1466965953061" expanded="true" signature="727:756" placeholder="SELECT MAX(I... USERS" />
+                    <marker date="1466965953061" expanded="true" signature="862:889" placeholder="SELECT COUNT... USERS" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="create-db.sql" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/db/create-db.sql">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -203,7 +206,6 @@
         <option value="$PROJECT_DIR$/src/main/java/org/kondrak/spring/DatabaseConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kondrak/spring/TestDatabase.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kondrak/spring/database/TestDatabase.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/db/create-db.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2a269272-9957-460b-9094-177586727cf9/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/org/kondrak/spring/gateways/TestGateway.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kondrak/spring/gateways/TestGatewayImpl.java" />
@@ -219,9 +221,10 @@
         <option value="$PROJECT_DIR$/src/main/java/org/kondrak/spring/serviceactivators/MessageLoggerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kondrak/spring/serviceactivators/FileWriterService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kondrak/spring/routers/MyRouter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/kondrak/spring/receivers/JdbcWriterService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kondrak/spring/IntegrationApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kondrak/spring/config/IntegrationAppConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/create-db.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kondrak/spring/receivers/JdbcWriterService.java" />
       </list>
     </option>
   </component>
@@ -1546,12 +1549,12 @@
       <updated>1466635836840</updated>
       <workItem from="1466635838258" duration="6072000" />
       <workItem from="1466721692296" duration="18743000" />
-      <workItem from="1466805794075" duration="13671000" />
+      <workItem from="1466805794075" duration="25264000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38486000" />
+    <option name="totallyTimeSpent" value="50079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="0" width="1936" height="2118" extended-state="0" />
@@ -1565,9 +1568,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33458647" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.353272" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31083843" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26789367" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="GhcMod" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1707,14 +1710,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/kondrak/spring/gateways/TestGatewayImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/kondrak/spring/gateways/TestGateway.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/create-db.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/kondrak/spring/controllers/IndexController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/kondrak/spring/gateways/MyGateway.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1798,13 +1793,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/kondrak/spring/routers/MyRouter.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.2.4.RELEASE/spring-jdbc-4.2.4.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="220">
+          <caret line="226" column="16" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1816,18 +1809,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.2.4.RELEASE/spring-jdbc-4.2.4.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/kondrak/spring/routers/MyRouter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="226" column="16" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="528">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/kondrak/spring/config/IntegrationAppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="76" column="52" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
+        <state relative-caret-position="155">
+          <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2675#2676#0" expanded="true" />
@@ -1836,20 +1831,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/create-db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/kondrak/spring/receivers/JdbcWriterService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        <state relative-caret-position="338">
+          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1466819792922" expanded="true" signature="653:746" placeholder="INSERT INTO USER... " />
-            <marker date="1466819792922" expanded="true" signature="653:766" placeholder="INSERT INTO USER... " />
-            <marker date="1466819792922" expanded="true" signature="653:767" placeholder="INSERT INTO USER... " />
-            <marker date="1466819792922" expanded="true" signature="653:786" placeholder="INSERT INTO USER... " />
-            <marker date="1466819792922" expanded="true" signature="653:795" placeholder="INSERT INTO USER... " />
-            <marker date="1466819792922" expanded="true" signature="653:797" placeholder="INSERT INTO USER... " />
-            <marker date="1466819792922" expanded="true" signature="717:745" placeholder="SELECT MAX(I... USER" />
-            <marker date="1466819792922" expanded="true" signature="847:873" placeholder="SELECT COUNT... USER" />
+            <marker date="1466965953061" expanded="true" signature="653:665" placeholder="INSERT INTO APP_USER... " />
+            <marker date="1466965953061" expanded="true" signature="653:810" placeholder="INSERT INTO USERS... " />
+            <marker date="1466965953061" expanded="true" signature="727:756" placeholder="SELECT MAX(I... USERS" />
+            <marker date="1466965953061" expanded="true" signature="862:889" placeholder="SELECT COUNT... USERS" />
           </folding>
         </state>
       </provider>
