@@ -16,13 +16,13 @@ import java.io.IOException;
 public class IntegrationApp {
 
     public static void main(String[] args) {
-        setupFileWriterMessageDirectory();
+//        setupFileWriterMessageDirectory();
         ConfigurableApplicationContext ctx = SpringApplication.run(IntegrationApp.class, args);
-        MyGateway gateway = (MyGateway) ctx.getBean("myGateway");
-        gateway.echo("Hello World!");
-        gateway.echo("298473");
-        gateway.echo("say hello!");
-        ctx.close();
+//        MyGateway gateway = (MyGateway) ctx.getBean("myGateway");
+//        gateway.echo("Hello World!");
+//        gateway.echo("298473");
+//        gateway.echo("say hello!");
+//        ctx.close();
     }
 
     private static void setupFileWriterMessageDirectory() {
