@@ -57,7 +57,8 @@ module.exports = function(grunt) {
             server: {
                 options: {
                     port: 9090,
-                    base: '../webapp'
+                    base: '../webapp',
+                    keepalive: true
                 }
             }
         }

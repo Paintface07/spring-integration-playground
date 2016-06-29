@@ -4,5 +4,5 @@
 (function() {
     'use strict';
     
-    angular.module('IntegrationApp', ['ngAria', 'ui.router']);
+    angular.module('IntegrationApp', ['ngAria', 'ngRoute', 'mobile-angular-ui']);
 })();
