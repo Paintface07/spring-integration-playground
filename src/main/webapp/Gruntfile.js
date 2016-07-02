@@ -6,16 +6,16 @@ module.exports = function(grunt) {
             main: {
                 files: [
                     { expand: true, flatten: true,
-                        src: ['node_modules/angular/angular.min.js'],
+                        src: [
+                            'node_modules/angular/angular.min.js',
+                            'node_modules/angular/*.min.js.map'
+                        ],
                         dest: 'generated/js/' },
                     { expand: true, flatten: true,
-                        src: ['node_modules/angular-aria/angular-aria.min.js'],
-                        dest: 'generated/js/' },
-                    { expand: true, flatten: true,
-                        src: ['node_modules/angular-route/angular-route.min.js'],
-                        dest: 'generated/js/' },
-                    { expand: true, flatten: true,
-                        src: ['node_modules/angular-touch/angular-touch.min.js'],
+                        src: [
+                            'node_modules/angular-aria/angular-aria.min.js',
+                            'node_modules/angular-aria/*.min.js.map'
+                        ],
                         dest: 'generated/js/' },
                     { expand: true, flatten: true,
                         src: ['node_modules/mobile-angular-ui/dist/css/mobile-angular-ui-*.min.css'],
@@ -24,7 +24,10 @@ module.exports = function(grunt) {
                         src: ['node_modules/mobile-angular-ui/dist/fonts/*'],
                         dest: 'generated/fonts/' },
                     { expand: true, flatten: true,
-                        src: ['node_modules/mobile-angular-ui/dist/js/mobile-angular-ui.*.min.js'],
+                        src: [
+                            'node_modules/mobile-angular-ui/dist/js/mobile-angular-ui*.min.js',
+                            'node_modules/mobile-angular-ui/dist/js/*.min.js.map'
+                        ],
                         dest: 'generated/js/' },
                     { expand: true, flatten: true,
                         src: ['node_modules/bootstrap/dist/css/*.min.css'],
@@ -39,11 +42,14 @@ module.exports = function(grunt) {
             files: ['Gruntfile.js', 'src/**/*.js']
         },
         watch: {
-            files: ['**/*.js', '**/*.less'],
+            files: ['*.js' + '**/*.js', '**/*.less'],
             tasks: ['jshint', 'uglify', 'less', 'copy']
         },
         uglify: {
             main: {
+                options: {
+                    sourceMap: true
+                },
                 files: {
                     'generated/js/IntegrationApp.min.js': ['src/**/*.js']
                 }

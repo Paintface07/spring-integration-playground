@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+    <title>Spring Integration Playground</title>
     <link type="text/css" rel="stylesheet" href="generated/css/bootstrap.min.css"/>
     <link type="text/css" rel="stylesheet" href="generated/css/bootstrap-theme.min.css"/>
     <link type="text/css" rel="stylesheet" href="generated/css/mobile-angular-ui-base.min.css"/>
@@ -9,20 +12,28 @@
 
     <script type="application/javascript" src="generated/js/angular.min.js"></script>
     <script type="application/javascript" src="generated/js/angular-aria.min.js"></script>
-    <script type="application/javascript" src="generated/js/angular-ui-router.min.js"></script>
-    <script type="application/javascript" src="generated/js/angular-touch.min.js"></script>
-    <script type="application/javascript" src="generated/js/mobile-angular-ui.components.min.js"></script>
+    <script type="application/javascript" src="generated/js/mobile-angular-ui.min.js"></script>
+    <script type="application/javascript" src="generated/js/mobile-angular-ui.core.min.js"></script>
     <script type="application/javascript" src="generated/js/mobile-angular-ui.gestures.min.js"></script>
     <script type="application/javascript" src="generated/js/IntegrationApp.min.js"></script>
 </head>
-<body data-ng-app="IntegrationApp">
-    <div class="sidebar sidebar-left"></div>
-    <div class="sidebar sidebar-right"></div>
-
+<body data-ng-app="IntegrationApp" data-ng-controller="IntegrationAppController">
     <div class="navbar navbar-app navbar-absolute-top"></div>
     <div class="navbar navbar-app navbar-absolute-bottom"></div>
 
-    <div class="app-body">
+    <div class="sidebar sidebar-left">
+        <div class="scrollable">
+            <h1 class="scrollable-header app-name">Menu</h1>
+            <div class="scrollable-content">
+                <div class="list-group" data-ui-turn-off="uiSidebarLeft">
+                    <a class="list-group-item" href="#/view1">View 1<i class="fa fa-chevron-right pull-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar sidebar-right"></div>
+
+    <div class="app-body" data-ui-swipe-right="Ui.turnOn('uiSidebarLeft')" data-ui-swipe-left="Ui.turnOff('uiSidebarLeft')">
         <div class="app-content">
             <div data-ng-view></div>
         </div>
